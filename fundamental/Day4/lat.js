@@ -3,38 +3,23 @@
 console.log('==========SOAL NO 1==============');
 console.log('\n');
 
-function segitiga(tinggi) {
-    
-    let hasil = '';
-    let tempat = '0' 
-    let tempat2 = 1
-    let val = tempat + tempat2;
-
-        for (let i = 0; i < tinggi; i++){
-            for (let j = 0; j <= i; j++){
-                
-                if (hasil.length==1){
-                     tempat+hasil
-                }
-
-                hasil +=val++ + ' '
-                
-            }
-
-           
-            hasil +='\n'
+function Sisegi(h) {
+    let value = 1
+    let has = ''
+    for (let i = 1; i <= h; i++){
+      
+        for( let j = 0; j <= i; j++){
+            if (value < 10) has += '0' + value + ' ';
+            else has += value + ' ';
+            value++;
         }
 
-        return hasil;
-
+        
+    
+    }
 }
 
-console.log('Menampilkan pola segitiga');
-console.log('\n');
 
-console.log(segitiga(4));
-
-console.log('\n');
 
 
 // soal no 2==================================================

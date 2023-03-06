@@ -1,9 +1,10 @@
-// Soal no1
+// // Soal no1
 // console.log('=============SOAL NO 1============');
 // console.log('\n');
 // console.log('Membuat Fungsi untuk Mencari nilai terendah, tertinggi, dan rata-rata dengan dan tanpa sort');
 // console.log('\n');
 // console.log('A. Dengan Menggunakan Fungsi Sort');
+
 // let arr = [1,5,8,6,100,12,108,22];
 
 // // menggunakan sort
@@ -40,30 +41,20 @@
 // console.log('\n');
 // console.log('Membuat fungsi untuk memanipulasi elemen array dan menambahkan concatonation');
 // console.log('\n');
-// let arr1 =  ["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu",];
-// let arr2 = ["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu",];
+// let arr1 =  ["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"];
+// let arr2 = [...arr1];
 // let Nr2 = arr2.toString();
-// console.log(Nr2);
-// let slais = Nr2.slice(36,42);
 // let pop = arr2.pop();
-// // console.log(arr2);
-// let Nr3 = arr2.concat(" dan ", slais);
-// let str = Nr3.toString();
+// let slais = Nr2.slice(36,42);
+// let Nr3 = arr2 + " dan " + slais;
+
 
 // console.log(`memanupilasi elemen array barikut :`);
 // console.log(arr1);
-// console.log(`Menjadi :`);
-// console.log(`1. dalam bentuk array  :`);
+// console.log(`Menjadi array dan menambah penghubung di antaranya :`);
 // console.log(Nr3);
-// console.log(`1. dalam bentuk string :`);
-// console.log(str);
 // console.log('\n');
 
-// // let dan = " dan ";
-// let New = new Array (arr2 + ' dan ' + pop);
-// New.join(',  ')
-// console.log(New);
-// // console.log(arr2);
 
 
 //Soal No 3
@@ -83,23 +74,70 @@
 
 
 //Soal no 4
-console.log('=============SOAL NO 4============');
-console.log('\n');
-console.log('Fungsi untuk menjumlahkan 2 buah array numerik pada elemen yang indexnya sama');
-console.log('\n');
+// console.log('=============SOAL NO 4============');
+// console.log('\n');
+// console.log('Fungsi untuk menjumlahkan setiap elemen yang indexnya sama pada 2 buah array numerik');
+// console.log('\n');
 
-let arr4 = ["1","5","9"];
-let arr4a = ["3","6","7"];
-let hasil = 0
+// let arr4 =  [1,2,3,9,15];
+// let arr4a = [4,5,6,5,19];
 
-let Narr4 = arr4.toString();
-let Narr4a = arr4a.toString();
+// let hasilarr = arr4.map((value,index) => value + arr4a[index]);
 
-    for( let i = 0; i < arr4; i++){
-        hasil.push(Narr4[i] + Narr4a[i])
-    }
+// console.log("Hasil penjumlahan setiap elemen dari array berikut :");
+// console.log(arr4);
+// console.log("dan");
+// console.log(arr4a);
+// console.log("adalah :");
+// console.log(hasilarr);
+// console.log('\n');
 
-    console.log(hasil);
 
-// let arr5 = [arr4[0]+arr4a[0],arr4[1]+arr4a[1],arr4[2]+arr4a[2]];
+
+
+// //Soal No 5
+// console.log('=============SOAL NO 5============');
+// console.log('\n');
+// console.log('Fungsi untuk menambahkan elemen baru yang belum ada pada sebuah array');
+// console.log('\n');
+
+// let arr5 = ["Rayyaki", "Rayyasi", "Rayyagi", "Rayyala",];
+// let adarr5 = "Rayyana";
+
+// console.log("Array Awal");
 // console.log(arr5);
+// console.log("Elemen yang di tambahkan");
+// console.log(adarr5);
+// console.log("Result :");
+
+//      if (arr5.includes(adarr5)){
+//         console.log("Addition is canceled, because the element you input already exists");
+//     } else {
+//         console.log("Addition was Successful");
+//         arr5.push(adarr5);
+//     }
+
+
+// console.log(arr5);
+
+
+
+
+// //Soal No 6
+// console.log('=============SOAL NO 6============');
+// console.log('\n');
+// console.log('Fungsi untuk menghapus elemen angka ganjil pada sebuah array dan hanya menampilkan angka genap');
+// console.log('\n');
+
+
+// let arr6 = [1,8,6,5,7,9,13,19,22];
+
+// let Narr6 = arr6.filter((val) =>{
+//       if ( val % 2 == 0 ) return val
+// })
+
+// console.log("Array awal :");
+// console.log(arr6);
+// console.log("Hasil Eleminasi Angka Ganjil  :");
+// console.log(Narr6);
+// console.log('\n');
