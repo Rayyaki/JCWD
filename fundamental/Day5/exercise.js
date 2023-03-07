@@ -49,6 +49,7 @@ console.log('\n');
 
 let arr1 =  ["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"];
 
+
 function ExerNo2(arr1) {
     let arr2 = [...arr1];
     let pop = arr2.pop();
@@ -155,21 +156,25 @@ console.log('Fungsi untuk menghapus elemen angka ganjil pada sebuah array dan ha
 console.log('\n');
 
 
-let arr6 = [1,8,6,5,7,9,13,19,22];
+let arr6 = [];
+let Gnp = [];
 
-function ExerNo6(arr6) {
-
-    let Narr6 = arr6.filter((val) =>{
-        if ( val % 2 == 0 ) return val
-  })
-  
-  console.log("Array awal :");
-  console.log(arr6);
-  console.log("Hasil setelah mengeleminasi Angka Ganjil  :");
-  console.log(Narr6);
-  console.log('\n');
+function gangen(awal, akhir) {
     
+    for ( i = awal; i <= akhir; i++){
+        arr6.push(i)
+         if (i % 2 == 0){
+            Gnp.push(i)
+         } 
+    }
+    
+    console.log("Array awal :");
+    console.log(arr6);
+    console.log("Hasil setelah mengeleminasi Angka Ganjil  :");
+    console.log(Gnp);
+    console.log('\n');
 }
 
-ExerNo6(arr6)
+gangen(0,100)
+  
 
