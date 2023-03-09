@@ -1,8 +1,3 @@
-// clue :
-// 
-
-
-
 // Membuat program menghitung jumlah gaji
 
 
@@ -16,7 +11,7 @@ class Employee {
 
 class salary extends Employee{
     #hour   
-    constructor(nama, jabatan, umur, hour, type){
+    constructor(nama, jabatan,  type, umur, hour){
         super(nama, jabatan, umur)
         this.#hour = hour;
         this.type = type;
@@ -28,7 +23,7 @@ class salary extends Employee{
 
     Total () {
 
-        let sisa = (this.hour - 6 < 0 ? 0 : this.hour);
+        let sisa = (this.hour - 6 < 0 ? 0 : this.hour - 6);
         let wh = (this.hour - 6 > 0 ? 6 : this.hour);
 
         let base = 0;
@@ -48,11 +43,10 @@ class salary extends Employee{
 
 }
 
-k1 = new Salary()
-console.log(k1.Salary.Total)
-
-
-
-
-
-
+k1 = new salary('Rizki', 'Teknisi IT', 'PartTime' );
+k1.add(12);
+k2 = new salary('Afri', 'Teknisi Enginaring', 'Fulltime' );
+k2.add(12);
+// console.log();
+console.log(` Gaji abang ${k1.nama} adalah ${k1.Total()}`);
+console.log(` Gaji abang ${k2.nama} adalah ${k2.Total()}`);
